@@ -1,4 +1,4 @@
-import { getDatabase } from "../lib/notion";
+import { getDatabase} from "../lib/notion";
 
 export default function Home(props) {
 	console.log(props)
