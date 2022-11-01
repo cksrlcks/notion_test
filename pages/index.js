@@ -11,13 +11,12 @@ export default function Home(props) {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	const database = await getDatabase();
   
 	return {
 	  props: {
 		posts: database,
-	  },
-	  revalidate: 1,
+	  }
 	};
   };
